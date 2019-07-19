@@ -215,7 +215,7 @@
   }
   
   #books {
-    background-image: url(/images/Karlův_most.jpg);
+    background-image: url(https://raw.githubusercontent.com/rabrad/kafka/master/images/Karlu%CC%8Av_most.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
