@@ -1,0 +1,370 @@
+/*--golbal--*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    margin: auto;
+    height: 100%;
+    padding-bottom: 100px;
+    scroll-behavior: smooth;
+  }
+  
+  /*-- Header area --*/
+  
+  #profile {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: none;
+  }
+  
+  header {
+    background-image: url(/images/franz-kafka-intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 100%;
+    padding-top: 120px;
+    min-height: 700px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+  
+  .container {
+    display: table;
+    content: "";
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .75);
+    margin-top: -120px;
+    padding-left: 120px;
+    overflow: hidden;
+    width:100%;
+    position:fixed;
+  }
+  
+  .navbar li {
+    display: inline;
+    color: #c18b1f;
+    font-size: 1em;
+  }
+  
+  .navbar a {
+    float: left;
+    color: #ddd;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #c18b1f;
+  }
+  
+  blockquote {
+    background: #e0dedb;
+    border-left: 12px solid #b87e25;
+    opacity: 0.8;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    position: relative;
+    max-width: 50%;
+    margin-top: 17%;
+    margin-left: 6%;
+  }
+  
+  blockquote::before {
+    color: #b87e25;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  
+  blockquote .quote {
+    display: inline;
+    font-size: 1.7em;
+    line-height: 1.2em;
+  }
+  
+  blockquote p {
+    margin:.5em 0;
+    color:#3a3a3a;
+  }
+  
+  blockquote #name {
+    font-style: italic;
+    font-size: 1.7em;
+    color:#b87e25;
+  }
+  
+  
+  /*--First section (intoduction information) --*/
+  
+  #intro {
+    max-width: 80%;
+    margin: auto;
+    line-height: 1.5em;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 1.5em;
+  }
+  
+  /*
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  */
+  
+  #list-title {
+    font-weight: 100;
+    font-size: 3.5em;
+    color: #c18b1f;
+  }
+  
+  .column li {
+    margin-bottom: 1.5em;
+  }
+  
+  #intro {
+    padding: 60px 0;
+    margin-bottom: 0px;
+    min-height: 100%;
+  }
+  
+  
+  
+  #intro h1 {
+    color: #c18b1f;
+    font-weight: 200;
+  }
+  
+  #intro h3 {
+    font-size: 1.5em;
+    font-weight: 200;
+    color: gray;
+    margin-bottom: 50px;
+  }
+  
+  /*--2nd section (Timeline area)--*/
+  
+  #row #list-title {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-size: 3.5em;
+    font-weight: 200;
+    color: #c18b1f;
+    line-height: 1.2em;
+    
+  }
+  
+  #row a{
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+  }
+  
+  #row a:hover{
+    color: #c18b1f;
+  }
+  
+  
+  .column2{
+    margin: 0 -5px;
+  }
+  
+  .column2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*--Book cards, 3ed section  --*/
+  
+  #books .container {
+    display: table;
+    content: "";
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  #books {
+    background-image: url(/images/Karlův_most.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100%;
+    padding: 80px 0;
+  }
+  
+  .card {
+    float: left;
+    width: 30%;
+    margin: 16px;
+    padding: 15px;
+    background-color: white;
+  }
+  
+  .card img {
+    width: 100%;
+  
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    font-size: .8em;
+  
+  }
+  
+  .button:hover {
+    background-color: #c18b1f;
+  }
+  
+  #books h2 {
+    text-align: center;
+    color: #c18b1f;
+    font-size: 3.5em;
+    font-weight: 200;
+    margin-bottom: 1.5em;
+  }
+  
+  #books p {
+    font-size: .8em;
+    color: #000;
+    line-height: 1.5em;
+  }
+  
+  #books .b-title{
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  
+  
+  /*--Footer --*/
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    height: 100px;
+    padding: 30px;
+    clear: both;
+  }
+  
+  footer p {
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  
+  footer a:hover {
+    color: #c18b1f;
+  }
+  
+  /*--Media query for mobiles screen--*/
+  
+  @media screen and (max-width: 653px) {
+    
+    header {
+      /*--To hide the navbar on mobile devices and to show smaller showcase image on the top area --*/
+      display: none;
+    }
+    
+  
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 1.5em;
+    }
+  
+    #intro h3 {
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 1.2em;
+    }
+  
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+  
+    #intro .container {
+      margin-top: 0px;
+    }
+  
+    .intro-text p {
+      text-align: justify;
+    }
+  
+    #profile {
+      display: block;
+      margin: 0.5em auto 0;
+    }
+    
+  
+    .column {
+      width: 100%;
+    }
+  
+    .card {
+      width: 100%;
+      display: block;
+      margin: 10px 0;
+      padding: 10px 15px;
+    }
+  
+    #intro .profile {
+      display: block;
+      margin: 80px auto 0;
+    }
+  }
+  
